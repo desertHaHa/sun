@@ -7,7 +7,7 @@ gulp.task('changeJs',function(){
         .pipe(gulp.dest('./dest/'));
 })
 gulp.task('hebin',function(){
-    gulp.src(['./dest/script2.js','./dest/script1.js'])
-        .pipe(concat(['./dest/script2.js','./dest/script1.js']))
+    gulp.src('./dest/script1.js')
+        .pipe(concat('./dest/script2.js'))
         .pipe(gulp.dest('./dest'));
 })
